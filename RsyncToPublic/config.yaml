@@ -1,0 +1,30 @@
+id: RsyncToPublic
+name: 公開ディレクトリにコピー
+version: 1.0
+description: 指定したシェルコマンドを実行します。
+author_name: Takashi ITOH@broadtech 
+author_link: https://www.broadtech.co.jp/
+doc_link: https://www.broadtech.co.jp/no_document_exists/
+
+applications:
+    cms:
+        menus:
+            tools:
+                permission: administer
+                system_permission: administer
+system_config_template: setting_system.tmpl
+settings:
+    rsync_date:
+        default:
+        scope: system
+    rsync_time:
+        default:
+        scope: system
+    rsync_cmd:
+        default:
+        scope: system
+tasks:
+    RsyncTask:
+        label: exec rsync script
+        frequency: 1
+        code: $RsyncToPublic::RsyncToPublic::Tasks::do_rsync
