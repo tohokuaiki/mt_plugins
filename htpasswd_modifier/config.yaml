@@ -1,0 +1,18 @@
+# htpasswd modifier
+#
+# Release 1.0.0 (2025-02-05)
+#
+# Copyright (c) ITOH Takashi
+name: htpasswd modifier
+id: htpasswd_modifier
+key: htpasswd_modifier
+version: 1.0.0
+author_name: <__trans phrase="ITOH Takashi">
+author_link: https://www.broadtech.co.jp/
+description: <__trans phrase="This modifier make htpasswd hash(Crypt::Bcrypt / Crypt::PasswdMD5 / Digest::SHA).">
+plugin_link: 
+doc_link: 
+l10n_class: htpasswd_modifier::L10N
+tags:
+    modifier:
+        htpasswd: $htpasswd_modifier::htpasswd_modifier::Tags::fltr_htpasswd
